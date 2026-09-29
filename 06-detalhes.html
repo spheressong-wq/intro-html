@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre detalhes de elementos de details no HTML5 semântico.">
+
+    <title>Sobre detalhes HTML</title>
+
+    <style>
+        body {
+            background-color: #1d1d1d;
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Sobre o elemento details</h1>
+    <hr>
+
+    <h2>Entendo a estrutura</h2>
+    <p>O elemento de details é formado pela tag de details &lt;details&gt; e  a tag &lt;summary&gt;.</p>
+    
+    <!-- Se quiser deixar ele sempre aberto, use o "open" depois do details. Para alternar entre abrir e fechar os tópicos, tipo, quando abre um, fecha o outro automaticamente; coloque name="faq" no details. Vcoê também pode misturar os dois. -->
+
+    <details name="faq" open>
+
+        <summary>  Por que as estrelas são incriveis?   </summary>
+          <p> Existem muitos motivos para amar as estrelas</p>
+
+          <ul>
+            <li> Brilham </li>
+            <li> São quimica pura </li>
+            <li> Brilham </li>
+            <li> São bonitas </li>
+            <li> Criam constelações no nosso ponto de vista </li>
+          </ul>
+    </details>
+
+    <details name="faq">
+
+        <summary>  Então, pra que serve a tag de details?   </summary>
+          <p> É pra fazer tópicos, tipo as listas, só que eles podem se contrair e expandir.</p>
+
+          <ul>
+            <li> Tipo isso, mas não precisam ser listas </li>
+            <li> Podem ser paragrafos </li>
+            <li> Podem ser paragrafos </li>
+            <li> Podem ser paragrafos </li>
+            <li> Podem ser paragrafos </li>
+          </ul>
+    </details>
+
+</body>
+</html>

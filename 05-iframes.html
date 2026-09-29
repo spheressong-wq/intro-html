@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "Site sobre elemento Iframe. Inline Frame para embutir outros sites." >
+    <title> Sobre iframes </title>
+</head>
+<body>
+    <h1> Iframes </h1>
+    <hr>
+
+    <h2> Para que serve?</h2>
+    <p> O inline iFrame é um elemento que nos permite embutir outro documento ou conteúdo externo dentro de nossa página. É bastante usado para youtube, Google Maps, formulários, etc. </p>
+
+    <h3> Exemplo básico de iFrame</h3>
+    <iframe src="04-imagens.html" frameborder="0"></iframe>
+
+    <hr>
+    <h3> Carregando o youtube</h3>
+
+    <iframe 
+    width="560" 
+    height="315"
+     src="https://www.youtube.com/embed/C9VnAJysiLE?si=XrPGlzXzbf7JAn8g" 
+     title="Vídeo sobre a hipótese dos buracos brancos" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
+    </iframe>
+
+    <!-- Você pode pegar um iframe vindo do próprio YouTube, é só copiar e colar (clique em compartilhar, depois embed)-->
+
+    <!-- Picture in picture = abrir uma pequena janela sobre outra -->
+    <!-- Auto play = vídeos são reproduzidos automaticamente -->
+    <!-- Gyroscope = permite o controle do vídeo com o movimento do dispositivo -->
+    <!-- clipboard-write = permite escrever no clipboard -->
+    <!-- Encrypted media = permite reproduzir conteúdo multimídia criptografado -->
+     
+    <h3> Carregando mapas </h3>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12105.01476249199!2d-46.73276495625002!3d-23.566575653660337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5611e0f05911%3A0x4f4f4d2c7e06e56!2sUniversidade%20de%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1790166543333!5m2!1sen!2sbr" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    <!-- colocar um pdf aqui -->
+    <iframe src="" frameborder="0"></iframe>
+    
+</body>
+</html>

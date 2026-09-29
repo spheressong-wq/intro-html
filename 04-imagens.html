@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalhando com imagens</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+
+    <P>Trabalhando com o elemento &lt; img &gt;</P>
+    <img src="café.jpg" alt="café maravilhoso" width="500">
+
+    <p>Entendendo os atributos</p>
+
+    <ul>
+        <li><strong>src:</strong>Source/fonte: é o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho local ou um link direto da internet. </li>
+
+        <li><strong>alt</strong> alt/alternative: é uma breve descrição da imagem. É crucial para <strong>acessibilidade</strong> e como fallback (plano B).</li>
+    </ul>
+    
+    <h2>Trabalhando com recursos externos</h2>
+    <p>Configurando imagens externas</p>
+    
+    <img src="flor-lias-destaque-unsplash.jpg" alt="Flor de lilas em destaque" width="500">
+
+        <h2> Outras abordagens</h2>
+        <h3> Elemento figure</h3>
+
+        <figure>
+    <img
+      src="flor-lias-destaque-unsplash.jpg"
+      alt="Flor de lilás em destaque"
+      width="500"
+    >
+    <figcaption>Legenda da imagem</figcaption>
+  </figure>
+
+
+        <h3> Elemento picture</h3>
+
+        <p> Utilizamos o elemento &lt; picture &gt; para controlarmos qual arquivo será utilizado de acordo com determinadas condições.</p>
+
+        <picture> 
+            <source media="(min-width=600px)" srctset = "flor-lias-destaque-unsplash.jpg">
+            <!-- imagem como fallback (plano B) - caso não sej apossível utilizar algumas imagem configurada no source acima, o navegador entrega a imagem do img. -->
+        </picture>
+
+        <hr>
+        <h2> Sobre os tipos de imagens </h2>
+        <p> Você pode encontrar um acervo muito grande de tipos de imagens. A escolha da imagem certa pode elevar a performance do seu site. Veja a lista abaixo: </p>
+
+        <ul>
+            <li>
+                <strong> JPEG/JPG </strong>: Bom para fotografias, produtos fotografados, imagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna visível. </li>
+            </li>
+
+            <li> <strong> PNG</strong>: Suporta transparência e é muito boa para imagens que precisam preservar certos detalhes. Como por exemplo: logos, imagens que precisam de transparência, etc.    </li>
+
+            <li> <strong> WEBP </strong>: Formato recente desenvolvido com foco na web. Além de também suportar transparência, também consegue trabalhar com imagens em alta definição. Excelente escolha para fotografias, imagens de produtos, imagens com transparência e imagens gerais. </li>
+
+            <li> <strong> AVIF </strong>: É um formato mais recente e também muito eficiente. É excelente, para fotografia, imagens grandes, sites onde desempenho e economia de dados são extremamente importantes. </li>
+
+            <li> <strong> SVG </strong>: É um elemento vetorial, excelente para logos, ícones, símbolos e etc. </li>
+            
+        </ul>
+
+
+
+
+</body>
+</html>
